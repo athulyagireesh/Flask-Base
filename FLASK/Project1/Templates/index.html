@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -12,5 +12,31 @@
     </div>
    
     <img src="{{url_for('static',filename='images/devu.jpg')}}" alt="" width="300px">
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Send Mail</h2>
+    <form method="POST">
+        <label for="">Receipients Mail</label><br>
+        <input type="email" name="email" required id=""><br><br>
+
+        <label for="">Subject</label><br>
+        <input type="text" name="subject" required id=""><br><br>
+
+        <label for="">Message</label>
+        <textarea name="message" id="" cols="30" rows="10"></textarea><br><br>
+
+        <button type="submit">Send Mail</button>
+    </form>
 </body>
 </html>
